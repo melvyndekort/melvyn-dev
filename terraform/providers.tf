@@ -5,7 +5,7 @@ terraform {
       version = ">= 3.0"
     }
     netlify = {
-      source = "Fantom-App/netlify"
+      source  = "Fantom-App/netlify"
       version = ">= 0.7.10"
     }
   }
