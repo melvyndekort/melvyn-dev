@@ -1,9 +1,5 @@
-data "cloudflare_zone" "melvyn_dev" {
-  name = "melvyn.dev"
-}
-
 resource "cloudflare_record" "apex" {
-  zone_id = data.cloudflare_zone.melvyn_dev.id
+  zone_id = data.terraform_remote_state.cloudsetup.outputs.melvyn_dev_zone_id
   name    = ""
   type    = "CNAME"
   ttl     = "300"
@@ -11,8 +7,8 @@ resource "cloudflare_record" "apex" {
 }
 
 resource "cloudflare_record" "www" {
-  zone_id = data.cloudflare_zone.melvyn_dev.id
-  name    = ""
+  zone_id = data.terraform_remote_state.cloudsetup.outputs.melvyn_dev_zone_id
+  name    = "www"
   type    = "CNAME"
   ttl     = "300"
   value   = "apex-melvyn-dev.netlify.app"
