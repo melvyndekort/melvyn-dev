@@ -6,7 +6,7 @@ ifndef AWS_SESSION_TOKEN
 endif
 
 clean_secrets:
-	@rm -f secrets.yaml
+	@rm -f terraform/secrets.yaml
 
 decrypt: clean_secrets
 	@aws kms decrypt \
@@ -22,7 +22,7 @@ encrypt:
 		--encryption-context target=melvyn-dev \
 		--output text \
 		--query CiphertextBlob > terraform/secrets.yaml.encrypted
-	@rm -f secrets.yaml
+	@rm -f terraform/secrets.yaml
 
 init: clean_secrets
 	@cd terraform && terraform init -upgrade
