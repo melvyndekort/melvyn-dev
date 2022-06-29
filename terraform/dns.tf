@@ -3,7 +3,7 @@ resource "cloudflare_record" "apex" {
   name    = ""
   type    = "CNAME"
   ttl     = 1
-  proxied = true
+  proxied = false
   value   = "apex-loadbalancer.netlify.com"
 }
 
@@ -12,6 +12,6 @@ resource "cloudflare_record" "www" {
   name    = "www"
   type    = "CNAME"
   ttl     = 1
-  proxied = true
+  proxied = false
   value   = "apex-melvyn-dev.netlify.app"
 }
