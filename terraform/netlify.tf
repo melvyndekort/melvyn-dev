@@ -1,10 +1,10 @@
-resource "netlify_site" "melvyn-dev" {
-  name = "melvyn-dev"
+resource "netlify_site" "site" {
+  name = var.name
+  custom_domain = var.domain_name
 
   repo {
-    repo_branch = "main"
-    dir         = "src"
-    provider    = "github"
-    repo_path   = "melvyndekort/melvyn-dev"
+    repo_branch   = "main"
+    provider      = "github"
+    repo_path     = var.repo
   }
 }
