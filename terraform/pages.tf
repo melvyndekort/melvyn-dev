@@ -11,7 +11,7 @@ resource "cloudflare_pages_domain" "apex" {
 
   depends_on = [
     cloudflare_pages_project.site,
-    cloudflare_record.site,
+    cloudflare_record.apex,
   ]
 }
 
