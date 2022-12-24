@@ -1,6 +1,5 @@
 variable "name" {}
-variable "repo" {}
+variable "repo_owner" {}
+variable "repo_name" {}
+variable "repo_branch" {}
 variable "domain_name" {}
-variable "domain_aliasses" {
-  type = list(string)
-}
