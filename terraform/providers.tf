@@ -8,5 +8,5 @@ terraform {
 }
 
 provider "cloudflare" {
-  api_token = data.terraform_remote_state.cloudsetup.outputs.api_token_apex_melvyn_dev
+  api_token = data.terraform_remote_state.cloudsetup.outputs.api_token_melvyn_dev
 }
