@@ -10,16 +10,14 @@ resource "cloudflare_record" "apex" {
   type    = "CNAME"
   ttl     = 1
   proxied = false
-  value   = "apex-loadbalancer.netlify.com"
+  value   = "${var.name}.pages.dev"
 }
 
-resource "cloudflare_record" "aliasses" {
-  for_each = toset(var.domain_aliasses)
-
+resource "cloudflare_record" "site" {
   zone_id = data.cloudflare_zones.zone.zones[0].id
-  name    = each.key
+  name    = "www.${var.domain_name}"
   type    = "CNAME"
   ttl     = 1
   proxied = false
-  value   = "${var.name}.netlify.app"
+  value   = "${var.name}.pages.dev"
 }
