@@ -1,12 +1,10 @@
 terraform {
   required_version = "~> 1.5.0"
 
-  cloud {
-    organization = "melvyndekort"
-
-    workspaces {
-      name = "melvyn-dev"
-    }
+  backend "s3" {
+    bucket = "mdekort.tfstate"
+    key    = "melvyn-dev.tfstate"
+    region = "eu-west-1"
   }
 
   required_providers {
