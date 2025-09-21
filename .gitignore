@@ -3,6 +3,9 @@ public/
 resources/
 .hugo_build.lock
 
+# Hugo modules
+_vendor/
+
 # Node.js
 node_modules/
 npm-debug.log*
