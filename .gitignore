@@ -13,7 +13,7 @@ npm-debug.log*
 # Terraform
 .terraform
 .terraform.lock.hcl
-secrets.yaml
+terraform.tfstate*
 
 # IDE
 .vscode/

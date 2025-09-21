@@ -10,7 +10,7 @@ updates:
     reviewers:
       - "melvyndekort"
   - package-ecosystem: "npm"
-    directory: "/src"
+    directory: "/"
     schedule:
       interval: "weekly"
     assignees:
