@@ -1,29 +1,68 @@
 BasicInfo:
   FirstName: Melvyn
   LastName: de Kort
-  Photo: img/avatar.jpg
+  Photo: img/avatar.png
   Contacts:
     - Icon: fas fa-phone
-      Info: +31 123 456 789
+      Info: +31 641381489
     - Icon: fas fa-envelope
-      Info: <email>
+      Info: melvyn@mdekort.nl
     - Icon: fas fa-globe
       Info: <a class="contact__link" href="https://melvyn.dev" target="_blank">melvyn.dev</a>
     - Icon: fas fa-map-marker-alt
       Info: Netherlands
 
-Profile: Your professional summary goes here. Describe your experience, skills, and career objectives.
+Profile: Product Owner specializing in cloud infrastructure and platform engineering. Currently leading a platform team focused on AWS Landing Zone implementation, providing foundational cloud services for development teams. Expertise in stakeholder management, backlog prioritization, and translating business requirements into technical solutions. Strong background in AWS services including ECS Fargate, Lambda, API Gateway, and infrastructure-as-code with Terraform.
 
 Experience:
-  - Employer: <Company Name>
-    Place: <Location>
+  - Employer: Portbase
+    Place: Rotterdam
     Positions:
-      - Title: <Job Title>
-        Date: <Start Date> - <End Date>
+      - Title: Product Owner - Cloud Platform
+        Date: Nov 2024 - Present
         Details:
-          - <Achievement or responsibility>
-          - <Achievement or responsibility>
-        Badges: ['<Technology>', '<Technology>']
+          - Leading platform team focused on AWS Landing Zone implementation
+          - Managing backlog, priorities, and business requirements for cloud infrastructure
+          - Stakeholder management and defining mission/vision for platform services
+          - Collaborating with Tech Lead on technical implementation strategies
+        Badges: ['AWS Landing Zone', 'Platform Team', 'Product Management', 'Stakeholder Management']
+      - Title: Cloud Developer Advocate
+        Date: Jun 2022 - Nov 2024
+        Details:
+          - Led cloud architecture and development initiatives
+          - Advocated for cloud-native solutions and best practices
+          - Worked with modern technologies and distributed systems
+        Badges: ['GitHub', 'Apache Pulsar', 'AWS', 'DevOps']
+      - Title: Cloud Engineer
+        Date: Jun 2021 - Jun 2022
+        Details:
+          - Designed and implemented cloud infrastructure solutions
+          - Maintained and optimized cloud-based systems
+        Badges: ['AWS', 'Terraform', 'Docker']
+      - Title: Product Owner
+        Date: Apr 2020 - Jun 2021
+        Details:
+          - Managed product roadmap and stakeholder requirements
+          - Coordinated development teams using Agile methodologies
+        Badges: ['Agile', 'SCRUM', 'Product Management']
+      - Title: Cloud Architect
+        Date: Nov 2018 - Apr 2020
+        Details:
+          - Architected scalable cloud solutions
+          - Defined technical standards and best practices
+        Badges: ['AWS', 'Architecture', 'Terraform']
+      - Title: Cloud Engineer
+        Date: Apr 2017 - Oct 2018
+        Details:
+          - Implemented cloud migration strategies
+          - Developed infrastructure as code solutions
+        Badges: ['AWS', 'Infrastructure', 'DevOps']
+      - Title: Software Release Coordinator
+        Date: Apr 2014 - Apr 2017
+        Details:
+          - Coordinated software releases across multiple teams
+          - Implemented continuous delivery processes
+        Badges: ['Release Management', 'CI/CD', 'Coordination']
 
 Education:
   - Course: <Degree>
@@ -32,20 +71,46 @@ Education:
     Details: <Description>
 
 Skills:
-  - Family: Programming
+  - Family: Product Management
     Items:
-      - <Language>
-      - <Language>
-  - Family: Developer Tools
+      - Product Ownership
+      - Backlog Management
+      - Stakeholder Management
+      - Requirements Analysis
+  - Family: Cloud & Infrastructure
     Items:
-      - <Tool>
-      - <Tool>
+      - AWS Landing Zone
+      - ECS Fargate
+      - Lambda
+      - API Gateway
+      - CloudFront
+      - S3
+  - Family: Team Leadership
+    Items:
+      - Team Topologies
+      - Platform Teams
+      - Mission & Vision
+      - Cross-functional Collaboration
+  - Family: Technical
+    Items:
+      - Terraform
+      - AWS CLI
+      - IAM
+      - CloudWatch
+      - Bash Scripting
+      - Configuration-as-Code
+  - Family: Methodologies
+    Items:
+      - Agile Development
+      - SCRUM
+      - DevOps
+      - Continuous Delivery
 
 Languages:
-  - Name: English
-    Level: Native
   - Name: Dutch
     Level: Native
+  - Name: English
+    Level: Professional Proficiency
 
 Interests:
   - <Interest>
