@@ -15,12 +15,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: "melvyn-dev"
-          directory: "src/"
-          # Optional: Enable this if you want to have GitHub Deployments triggered
+          directory: "public/"
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}

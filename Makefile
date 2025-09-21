@@ -1,4 +1,4 @@
-.PHONY := clean_secrets decrypt encrypt init plan apply
+.PHONY := clean_secrets decrypt encrypt init plan apply serve
 .DEFAULT_GOAL := apply
 
 ifndef AWS_SESSION_TOKEN
@@ -13,13 +13,13 @@ decrypt: clean_secrets
 		--ciphertext-blob $$(cat terraform/secrets.yaml.encrypted) \
 		--output text \
 		--query Plaintext \
-		--encryption-context target=melvyn-dev | base64 -d > terraform/secrets.yaml
+		--encryption-context target=cv-melvyn-dev | base64 -d > terraform/secrets.yaml
 
 encrypt:
 	@aws kms encrypt \
 		--key-id alias/generic \
 		--plaintext fileb://terraform/secrets.yaml \
-		--encryption-context target=melvyn-dev \
+		--encryption-context target=cv-melvyn-dev \
 		--output text \
 		--query CiphertextBlob > terraform/secrets.yaml.encrypted
 	@rm -f terraform/secrets.yaml
@@ -32,3 +32,6 @@ plan: init
 
 apply: init
 	@cd terraform && terraform apply
+
+serve:
+	@hugo server -D --bind 0.0.0.0

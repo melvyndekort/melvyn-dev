@@ -1,0 +1,52 @@
+BasicInfo:
+  FirstName: Melvyn
+  LastName: de Kort
+  Photo: img/avatar.jpg
+  Contacts:
+    - Icon: fas fa-phone
+      Info: +31 123 456 789
+    - Icon: fas fa-envelope
+      Info: <email>
+    - Icon: fas fa-globe
+      Info: <a class="contact__link" href="https://melvyn.dev" target="_blank">melvyn.dev</a>
+    - Icon: fas fa-map-marker-alt
+      Info: Netherlands
+
+Profile: Your professional summary goes here. Describe your experience, skills, and career objectives.
+
+Experience:
+  - Employer: <Company Name>
+    Place: <Location>
+    Positions:
+      - Title: <Job Title>
+        Date: <Start Date> - <End Date>
+        Details:
+          - <Achievement or responsibility>
+          - <Achievement or responsibility>
+        Badges: ['<Technology>', '<Technology>']
+
+Education:
+  - Course: <Degree>
+    Place: <University>
+    Date: <Start Year> - <End Year>
+    Details: <Description>
+
+Skills:
+  - Family: Programming
+    Items:
+      - <Language>
+      - <Language>
+  - Family: Developer Tools
+    Items:
+      - <Tool>
+      - <Tool>
+
+Languages:
+  - Name: English
+    Level: Native
+  - Name: Dutch
+    Level: Native
+
+Interests:
+  - <Interest>
+  - <Interest>

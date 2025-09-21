@@ -1,0 +1,14 @@
+{
+  "name": "melvyn.dev",
+  "version": "1.0.0",
+  "description": "Personal CV website",
+  "scripts": {
+    "build": "hugo --gc --cleanDestinationDir --minify",
+    "dev": "hugo server --watch --disableFastRender --gc"
+  },
+  "author": "Melvyn de Kort",
+  "license": "MIT",
+  "devDependencies": {
+    "hugo-extended": "^0.150.0"
+  }
+}

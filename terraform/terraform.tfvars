@@ -1,5 +1,0 @@
-name        = "melvyn-dev"
-domain_name = "melvyn.dev"
-repo_owner  = "melvyndekort"
-repo_name   = "melvyn-dev"
-repo_branch = "main"
