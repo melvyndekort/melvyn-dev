@@ -9,6 +9,6 @@
   "author": "Melvyn de Kort",
   "license": "MIT",
   "devDependencies": {
-    "hugo-extended": "^0.150.1"
+    "hugo-extended": "^0.151.0"
   }
 }
