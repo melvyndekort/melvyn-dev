@@ -1,6 +1,6 @@
 # melvyn-dev
 
-> For global standards, way-of-workings, and pre-commit checklist, see `~/.kiro/steering/behavior.md`
+> For global standards, way-of-workings, and pre-commit checklist, see `~/.claude/CLAUDE.md`
 
 ## Role
 
@@ -26,6 +26,10 @@ Personal CV website built with Hugo (Go-based static site generator) using the A
 ## CI/CD
 
 Two workflows: `publish-site.yml` (Hugo build → Cloudflare Pages deploy) and `terraform.yml`
+
+## MCP servers
+
+This repo has a project-scoped `cloudflare` MCP server (`.mcp.json`) — see `~/.claude/references/mcp-catalog.md`.
 
 ## Related Repositories
 
