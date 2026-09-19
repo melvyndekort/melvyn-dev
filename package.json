@@ -10,5 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "hugo-extended": "^0.166.0"
+  },
+  "overrides": {
+    "adm-zip": "^0.6.1"
   }
 }
