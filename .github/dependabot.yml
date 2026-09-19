@@ -10,15 +10,9 @@ updates:
       - "melvyndekort"
     reviewers:
       - "melvyndekort"
+
+  - package-ecosystem: "npm"
     directory: "/"
-    schedule:
-      interval: "weekly"
-    assignees:
-      - "melvyndekort"
-    reviewers:
-      - "melvyndekort"
-  - package-ecosystem: "terraform"
-    directory: "/terraform"
     schedule:
       interval: "daily"
     rebase-strategy: "auto"
@@ -26,8 +20,19 @@ updates:
       - "melvyndekort"
     reviewers:
       - "melvyndekort"
+
   - package-ecosystem: "gomod"
     directory: "/"
+    schedule:
+      interval: "daily"
+    rebase-strategy: "auto"
+    assignees:
+      - "melvyndekort"
+    reviewers:
+      - "melvyndekort"
+
+  - package-ecosystem: "terraform"
+    directory: "/terraform"
     schedule:
       interval: "daily"
     rebase-strategy: "auto"
