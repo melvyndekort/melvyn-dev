@@ -9,7 +9,7 @@
   "author": "Melvyn de Kort",
   "license": "MIT",
   "devDependencies": {
-    "hugo-extended": "^0.166.0"
+    "hugo-extended": "^0.167.0"
   },
   "overrides": {
     "adm-zip": "^0.6.1"
